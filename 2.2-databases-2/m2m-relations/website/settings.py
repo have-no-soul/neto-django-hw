@@ -76,7 +76,9 @@ WSGI_APPLICATION = 'website.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'netology_m2m_relations',
+        'NAME': 'netology_m2m_relations_2',
+        'USER': 'django_orm_1',
+        'PASSWORD': 'django_orm_1',
         'HOST': '127.0.0.1',
         'PORT': '5432',
     }
@@ -99,6 +101,20 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+
+# Internationalization
+# https://docs.djangoproject.com/en/2.1/topics/i18n/
+
+LANGUAGE_CODE = 'ru-RU'
+
+TIME_ZONE = 'Europe/Moscow'
+
+USE_I18N = True
+
+USE_L10N = True
+
+USE_TZ = True
 
 
 # Internationalization
