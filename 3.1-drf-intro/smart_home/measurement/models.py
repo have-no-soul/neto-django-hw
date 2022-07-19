@@ -5,6 +5,9 @@ class Sensor(models.Model):
     name = models.CharField(max_length=50, verbose_name='Имя датчика')
     description = models.TextField(max_length=80, verbose_name='Описание')
 
+    def __str__(self):
+        return self.name
+
     class Meta:
         ordering = ['id']
 
